@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <head>
+  <body>
+    <!-- navbar -->
+      <nav> 
+        <div class="logo">
+          <h3><a href="merlin.html" class="logo-name">THE BOOK SHOP</a></h3>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="categories.html">Books catalog</a></li>
+          <li><a href="contact.html">ContactUs</a></li>
+          <li><a href="login.html" id="login">Login</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- navbar -->
+      <h2 class="main-head-of-products">Everyone Has A DREAM<br>
+        <span class="colored-word-bigger-size">FIND YOURS HERE!</span>
+      </h2>
+
+      <br>
+      <div class="bg-images">
+        <a href="products.html"><img src="images/me/Untitled design (1).png" alt=""></a>
+      </div>
+
+      <center><p class="msg-ps">
+        <span class="colored-word">Click</span> on the product to add in your shopping list.
+        <br>Go below and check <span class="colored-word">YOUR CART</span> for details.
+      </p></center>
+
+      <div>
+        <h1>For <span class="colored-word">Romantic</span></h1>
+        <center><hr class="products-hr"></center>
+        <br><br>
+
+        <div class="romantic">
+         <a href="cart.html"> <img src="images/me/ro/download (1).jpeg" id="Ohh Baby || Rs.199" onclick="add(this.id)"></a>     
+         <a href="cart.html"><img src="images/me/ro/download (2).jpeg" id="Wilde in Love || Rs.649"" alt="" onclick="add(this.id)"></a>
+          <a href="cart.html"><img src="images/me/ro/download (3).jpg" id="A part of You || Rs.359" alt="" onclick="add(this.id)"></a>
+          <a href="cart.html"><img src="images/me/ro/download (4).jpg" id="Love || Rs.990" alt="" onclick="add(this.id)"></a>
+        </div> 
+        
+        <h1>For <span class="colored-word">Action</span></h1>
+        <center><hr class="products-hr"></center>
+        <br><br>
+
+        <div class="Action">
+          <img src="images/me/action/images.jpeg"  id="Difference of Opinion Printed Shirt || Rs.449" alt="" onclick="add(this.id)">
+          <img src="images/me/action/download (3).jpeg"  id="Moda Rapido Printed Round Neck T-shirt || Rs.486" alt="" onclick="add(this.id)">
+          <img src="images/me/action/download.jpeg"  id="DILLINGER Colourblocked Round Neck T-shirt || Rs.404" alt="" onclick="add(this.id)">
+          <img src="images/me/action/images (1).jpeg"  id="Roadster T-shirt with Shoulder patch || Rs.519" alt="" onclick="add(this.id)">
+        </div>
+
+        <div>
+          <h1>For <span class="colored-word">kids</span></h1>
+          <center><hr class="products-hr"></center>
+          <br><br>
+  
+          <div class="romantic">
+            <img src="images/me/kids/images.jpeg" id="Ohh Baby || Rs.199" onclick="add(this.id)">      
+            <img src="images/me/kids/download.jpeg" id="Wilde in Love || Rs.649"" alt="" onclick="add(this.id)">
+            <img src="images/me/kids/images (2).jpeg" id="A part of You || Rs.359" alt="" onclick="add(this.id)">
+            <img src="images/me/kids/1.jpeg" id="Love || Rs.990" alt="" onclick="add(this.id)">
+          </div> 
+
+        <h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+
+        <div class="cart-details">
+          <h2 class="head-of-cart">Your Cart</h2>
+            <hr class="hr-of-cart-head">
+            <br>
+          <ul id="ul_pr">
+            
+          </ul>
+        <button class="btn-clear-list" onclick="emptyList()"> <span class="colored-word"> Clear My List</span></button> <br>
+          <small>Can't see anything? Click & add your favorite fashion in
+          <span class="colored-word"> Shopping List!</span> </small>
+        </div>
+        <br><br><br>
+      </div>
+      
+    <script src="nav.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>
